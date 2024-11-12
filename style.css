@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.clear{
+    clear: both;
+}
+body{
+    font-family: "Work Sans", system-ui;
+}
+.section-1{
+    width: 100%;
+    height: 100vh;
+    /* background-color: tomato; */
+    /* padding-top: 20px; */
+}
+.navbar{
+    height: 8%;
+    width: 95%;
+    margin: auto;
+    background-color: rgba(128, 128, 128, 0.556);
+    backdrop-filter: blur(8px); 
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 10px; */
+    position: fixed;
+    z-index: 688948984848898948;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.319);
+}
+.nav-logo{
+    width: 10%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-logo img{
+    width: 60%;
+}
+.nav-list{
+    width: 40%;
+    /* background-color: #0c0c; */
+}
+.nav-list a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    transition-property: color;
+    transition-duration: .2s;
+}
+.nav-list a:hover{
+    color: aqua;
+}
+.nav-list ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.home{
+    height: 100%;
+    background-image: url(./images/landing.jpg);
+    background-size: cover;
+    background-position: 100% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    padding-top: 40px;
+}
+.home-content{
+    /* background-color: aqua; */
+    text-align: center;
+}
+.home-content span{
+    display: block;
+}
+h1{
+    font-size: 60px;
+    color: rgb(11, 201, 201);
+    padding: 20px 0;
+}
+h1::after{
+    content: " |";
+    /* background-color: aqua; */
+    /* color: blue; */
+    animation-name: abdo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes abdo{
+    0% {content: " |";}
+    5% {content: "A |"}
+    10% {content: "Ab |"}
+    15% {content: "Abd |"}
+    20% {content: "Abde |"}
+    25% {content: "Abdel |"}
+    30% {content: "Abdelk |"}
+    35% {content: "Abdelkh |"}
+    40% {content: "Abdelkha |"}
+    45% {content: "Abdelkhal |"}
+    49% {content: "Abdelkhale |"}
+    53% {content: "Abdelkhaleq |"}
+    59% {content: "Abdelkhale |"}
+    63% {content: "Abdelkhal |"}
+    67% {content: "Abdelkha |"}
+    72% {content: "Abdelkh |"}
+    76% {content: "Abdelk |"}
+    80% {content: "Abdel |"}
+    84% {content: "Abde |"}
+    88% {content: "Abd |"}
+    92% {content: "Ab |"}
+    96% {content: "A |"}
+    100% {content: " |"}
+}
+
+.home-content p{
+    font-size: 19px;
+    font-style: oblique;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section-2{
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(236, 236, 236);
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0;
+}
+.section-2 .child{
+    width: 25%;
+    text-align: center;
+    background-color: rgba(213, 208, 208, 0.504);
+    padding-bottom: 20px;
+    box-shadow: 4px 4px 15px rgb(158, 158, 158);
+}
+.section-2 .child h2{
+    padding: 30px 0;
+}
+.section-2 .child p{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.762);
+    line-height: 30px;
+}
+.services{
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+.services-title{
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+.services-title h2{
+    color: rgb(216, 216, 234);
+    font-size: 120px;
+}
+.services-title p{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.712);
+    position: absolute;
+    bottom: 56px;
+    right: 41%;
+}
+.services-content{
+    height: 65vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 40px;
+}
+.services-content .content{
+    width: 55%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    transition-property: all;
+    transition-duration: .3s;
+}
+/* .services-content .content:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 15px black;
+} */
+.services-content .content .child{
+    width: 40%;
+    /* background-color: blueviolet; */
+    padding: 10px 15px;
+    transition-property: all;
+    transition-duration: .3s;
+}
+.services-content .content .child:hover{
+    background-color: rgb(246, 246, 246);
+    box-shadow: 4px 4px 15px black;
+}
+.services-content .content .child h3{
+    padding: 20px 0;
+}
+.services-content .picture{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: brown; */
+    position: relative;
+}
+.services-content .picture img{
+    width: 70%;
+    position: absolute;
+    z-index: 9999;
+
+}
+.rictangil{
+    width: 25%;
+    height: 95%;
+    background-color: rgb(34, 55, 55);
+    position: absolute;
+    left: 220px;
+    
+}
+.Portfolio-contenar{
+    background-color: rgba(216, 216, 234, 0.495);
+}
+.Portfolio{
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+    /* background-color: rgba(216, 216, 234, 0); */
+}
+.Portfolio-title{
+    /* background-color: blue; */
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+.Portfolio-title h2{
+    color: rgb(216, 216, 234);
+    font-size: 120px;
+}
+.Portfolio-title p{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.712);
+    position: absolute;
+    bottom: 56px;
+    right: 38%;
+}
+.Portfolio-content{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 40px;
+}
+.Portfolio-content .child{
+    background-color: rgba(205, 202, 202, 0.164);
+    width: 28%;
+    transition-property: all;
+    transition-duration: .3s;
+    /* background-color: blue; */
+}
+.Portfolio-content .child:hover{
+    background-color: rgb(201, 200, 200);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.634);
+}
+.Portfolio-content .child img{
+    width: 100%;
+}
+.Portfolio-content h3{
+    padding: 20px 0 20px 10px;
+}
+.Portfolio-content p{
+    color: rgb(110, 110, 130);
+    padding-left: 10px;
+    padding-bottom: 40px;
+}
+.About{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    padding: 40px 0;
+    margin-bottom: 20px;
+}
+.about-title{
+    /* background-color: blue; */
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+.about-title h2{
+    color: rgb(216, 216, 234);
+    font-size: 120px;
+}
+.about-title p{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.712);
+    position: absolute;
+    bottom: 60px;
+    right: 44%;
+}
+.about-content{
+    height: 70%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+.about-content .picture{
+    height: 100%;
+    width: 40%;
+    /* background-color: tomato; */
+    position: relative;
+    padding: 40px 0;
+}
+.about-content .picture img{
+    width: 50%;
+    position: absolute;
+    left: 5%;
+    z-index: 5;
+}
+.about-content .picture .shape-1{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(228, 224, 224);
+    /* background-color: blueviolet; */
+    position: absolute;
+    z-index: 0;
+    top: 0;
+}
+.about-content .picture .shape-2{
+    width: 42%;
+    height: 84.5%;
+    position: absolute;
+    background-color: aqua;
+    z-index: 0;
+    top: 0;
+    right: 13%;
+}
+.about-content .picture .shape-3{
+    width: 25%;
+    height: 70%;
+    background-color: white;
+    /* background-color: brown; */
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right:13%;
+}
+.about-content .content{
+    width: 50%;
+    /* height: 100%;    */
+    /* background-color: blue; */
+    font-size: 18px;
+}
+.content-1{
+    width: 100%;
+    padding: 40px 20px 40px 0px;
+    font-weight: 700;
+    line-height: 25px;
+}
+.content-2{
+    width: 100%;
+    color: rgba(0, 0, 0, 0.679);
+    padding: 40px 20px 40px 0px;
+    line-height: 25px;
+
+}
+.line{
+    width: 40%;
+    height: 3px;
+    background-color: aqua;
+}
+.Contact{
+    width: 100%;
+    /* height: 100vh; */
+    padding: 40px 0;
+    background-color: rgba(216, 216, 234, 0.495);
+
+}
+.contact-title{
+    /* background-color: blue; */
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+.contact-title h2{
+    color: rgb(216, 216, 234);
+    font-size: 120px;
+    padding-bottom: 40px;
+}
+.contact-title p{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.712);
+    position: absolute;
+    top: 55%;
+    right: 44%;
+}
+.contact-content{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+.contact-content .labe1{
+    color: #2c4755;
+}
+.contact-content a{
+    text-decoration: none;
+    color: rgb(4, 194, 194);
+    font-style: italic;
+    padding: 40px 0;
+}
+.contact-content .label3{
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+.foter{
+    width: 100%;
+    background-color: #2c4755;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+}
+.foter span{
+    color: aqua;
+
+}
+
+
+
+
+
+
